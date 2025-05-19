@@ -1,11 +1,12 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/laravel",
+    "name": "larastash/basic-kit",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
     "keywords": [
         "laravel",
-        "framework"
+        "framework",
+        "starter kit"
     ],
     "license": "MIT",
     "require": {
@@ -27,7 +28,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

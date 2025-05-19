@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>
+            @yield('title', 'Laravel')
+        </title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +15,10 @@
 
         <!-- Styles / Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @stack('styles')
     </head>
     <body class="text-sm font-sans antialiased">
-        <div class="min-h-dvh flex items-center justify-center">
-            <p class="font-mono">
-                <span class="text-gray-400">larastash/</span>basic-kit
-            </p>
-        </div>
+        @yield('body')
+        @stack('scripts')
     </body>
 </html>
