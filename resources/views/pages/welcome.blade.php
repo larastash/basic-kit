@@ -6,7 +6,7 @@
 <div class="min-h-dvh flex items-center justify-center font-mono bg-gray-50 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.05)_1px,transparent_0)] bg-[length:20px_20px]">
     <figure>
         <blockquote>
-          <p class="text-gray-500 font-mono text-lg max-w-md text-pretty w-full">
+          <p class="text-gray-500 text-lg max-w-md text-pretty w-full">
             {{ $quote }}
           </p>
         </blockquote>
