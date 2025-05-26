@@ -1,12 +1,19 @@
 @extends('layouts.app')
 
-@section('title', 'Hello world!')
+@section('title', 'Larastash')
 
 @section('body')
-<div class="min-h-dvh flex items-center justify-center font-mono">
-    <h1 class="text-gray-100 font-mono font-black text-9xl">
-        basic
-    </h1>
+<div class="min-h-dvh flex items-center justify-center font-mono bg-gray-50 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.05)_1px,transparent_0)] bg-[length:20px_20px]">
+    <figure>
+        <blockquote>
+          <p class="text-gray-500 font-mono text-lg max-w-md text-pretty w-full">
+            {{ $quote }}
+          </p>
+        </blockquote>
+        <figcaption class="mt-4 text-gray-400">
+            — {{ $author }}
+        </figcaption>
+    </figure>
     <div class="absolute bottom-4 inset-x-4">
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
@@ -15,9 +22,12 @@
                     ready for something awesome
                 </p>
             </div>
-            <p class="text-gray-500">
-                larastash
-            </p>
+            <a href="https://github.com/larastash/basic-kit" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-black flex items-center gap-2">
+                <x-icon name="lucide-external-link" class="shrink-0 size-4" />
+                <span>
+                    larastash/basic-kit
+                </span>
+            </a>
         </div>
     </div>
 </div>
