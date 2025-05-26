@@ -28,9 +28,6 @@ module.exports = {
             borderRadius: {
                 brand: defaultTheme.borderRadius.lg,
             },
-            borderColor: {
-                DEFAULT: colors.slate[200],
-            },
         },
     },
     plugins: [
