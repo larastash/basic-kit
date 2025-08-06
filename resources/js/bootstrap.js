@@ -4,9 +4,15 @@ window.axios = axios;
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-// alpine.js
-import Alpine from 'alpinejs';
+// livewire & alpine.js
+import { Livewire, Alpine } from '../../vendor/livewire/livewire/dist/livewire.esm';
 
-window.Alpine = Alpine;
+Alpine.directive('clipboard', (el) => {
+    let text = el.textContent;
 
-Alpine.start();
+    el.addEventListener('click', () => {
+        navigator.clipboard.writeText(text);
+    });
+});
+
+Livewire.start();

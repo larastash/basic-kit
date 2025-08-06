@@ -9,4 +9,23 @@
     ::file-selector-button {
         @apply border-gray-200 outline-gray-200;
     }
+
+    button, a, textarea, input {
+        @apply outline-none focus:outline-none;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
+}
+
+@layer utilities {
+    .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scrollbar-none::-webkit-scrollbar {
+        display: none;
+    }
 }
